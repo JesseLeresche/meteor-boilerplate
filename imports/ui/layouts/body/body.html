@@ -1,0 +1,15 @@
+<template name="body-wrapper">
+    <head>
+        <title>Meteor Boilerplate</title>
+    </head>
+
+    <body>
+    {{> yield region='nav'}}
+    <main>
+        {{> yield}}
+    </main>
+
+    {{> yield region='footer'}}
+    </body>
+</template>
+

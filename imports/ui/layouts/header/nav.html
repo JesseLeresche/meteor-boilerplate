@@ -1,0 +1,13 @@
+<template name="nav">
+    <header>
+        <nav>
+            <div class="nav-wrapper cyan darken-2">
+                <a href="/" class="brand-logo white-text">Meteor Boilerplate</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="{{isActiveRoute name='hidden_page'}}"><a href="{{pathFor route='hidden_page'}}">Hidden Page</a></li>
+                    <li>{{> atNavButton}} </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</template>
