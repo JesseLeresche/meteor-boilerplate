@@ -4,7 +4,8 @@
 import "../../ui/layouts/body/body.js";
 import "../../ui/layouts/main/main.js";
 import "../../ui/layouts/hidden/hidden.js";
-//import "../../ui/layouts/shared/404not_found.html";
+import "../../ui/layouts/shared/404not_found.html";
+import "../../ui/layouts/shared/loading.html";
 import "../../ui/stylesheets/main.css";
 
 //Router Configuration
@@ -28,6 +29,11 @@ Router.route('/', {
 Router.route('/hidden', {
     name: "hidden_page",
     template:"hidden_page",
+});
+
+Router.route('/someWrongUrl', {
+    name: "not_found",
+    template:"not_found",
 });
 
 Router.plugin('ensureSignedIn', {
